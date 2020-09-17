@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulir</title>
+</head>
+<body>
+	<form>
+		<h1 align="center">Latihan Formulir</h1>
+		<fieldset>
+			<legend align="center">Input Data</legend>
+			<table>
+				<tr>
+					<td>Nama</td>
+					<td>:</td>
+					<td> <input type="text" name="Nama" placeholder="Masukan Nama Lengkap"></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>:</td>
+					<td> <input type="Password" name="Password"></td>
+				</tr>
+				<tr>
+					<td>Tanggal Lahir</td>
+					<td>:</td>
+					<td> <input type="date"></td>
+				</tr>
+				<tr>
+					<td>Jenis Kelamin</td>
+					<td>:</td>
+					<td>
+						<input type="radio" name="jk" value="Laki - Laki" checked="checked">
+						<input type="radio" name="jk" value="Perempuan">
+					</td>
+				</tr>
+				<tr>
+					<td>Asal Kota</td>
+					<td>:</td>
+					<td>
+						<select>
+							<option value="pwt" selected="selected">Purwokerto</option>
+							<option value="kds">Kudus</option>
+							<option value="smg">Semarang</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Alamat</td>
+					<td>:</td>
+					<td><textarea cols="20" rows="10">Silahkan katakan isi alamat</textarea></td>
+				</tr>
+				<tr>
+					<td>Hobi</td>
+					<td>:</td>
+					<td><input type="checkbox" name="Hobi">Membaca Buku</td>
+					<td><input type="checkbox" name="Hobi" checked="checked">Menulis</td>
+					<td><input type="checkbox" name="Hobi">Memancing</td>
+				</tr>
+				<tr>
+					<td>Makanan Favorit</td>
+					<td>:</td>
+					<td><input type="text" list="Makanan"></td>
+					<datalist id="Makanan">
+						<option value="Salad Sayur">Salad Sayur</option>
+						<option value="Telur">Telur</option>
+						<option value="Ayam Goreng">Ayam Goreng</option>
+						<option value="Bakso">Bakso</option>
+						<option value="Coklat">Coklat</option>
+					</datalist>
+				</tr>
+				<tr>
+					<td colspan="4"></td>
+					<td>
+						<input type="submit" name="submit">
+						<input type="reset" name="reset">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<center><button type="submit">Next Page</button></center>
+	</form>
+</body>
+</html>
